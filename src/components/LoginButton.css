@@ -1,0 +1,54 @@
+@keyframes typewriter {
+    0% {
+        width: 0;
+    }
+    33.33% {
+        width: 100%;
+    }
+    55.55% {
+        width: 100%;
+    }
+    88.88% {
+        width: 0;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes blinkCursor {
+    0%, 100% {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    50% {
+        border-right-color: transparent;
+    }
+}
+
+.typewriter {
+    display: inline-block;    /* ทำให้ element มีขนาดเท่ากับเนื้อหา */
+    max-width: max-content;    /* จำกัดความกว้างสูงสุดให้เท่ากับ intrinsic width */
+    overflow: hidden;         /* ซ่อนเนื้อหาที่เกินออกไป */
+    white-space: nowrap;      /* ไม่ให้ขึ้นบรรทัดใหม่ */
+    border-right: 0.15em solid rgba(255, 255, 255, 0.75); /* Cursor */
+    width: 0;                 /* เริ่มต้นที่ไม่มีความกว้าง */
+    animation: typewriter 6s steps(40, end) infinite, blinkCursor 0.75s step-end infinite;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.animate-gradientBG {
+    background: linear-gradient(270deg, #d36d8b, #d8a165, #8ec9c8, #d36d8b);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
