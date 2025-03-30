@@ -1,3 +1,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #000000;
+    color: white;
+    overflow: hidden;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+
+/* กำหนดให้พื้นหลังทั้งหมดเป็นสีดำ */
+html, body {
+    background-color: #000000;
+}
+
+/* ปรับแต่ง scrollbar ให้เหมือนกันทั้งแอพ */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #222;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #AC1B2D;
+    border-radius: 10px;
+    border: 2px solid #222;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d42235;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #AC1B2D #222;
+}

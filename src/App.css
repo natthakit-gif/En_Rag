@@ -1,0 +1,52 @@
+/* Additional styles for ScrollBar */
+.scrollbar-custom::-webkit-scrollbar {
+    width: 10px;
+}
+.scrollbar-custom::-webkit-scrollbar-track {
+    background: #222;
+    border-radius: 8px;
+}
+.scrollbar-custom::-webkit-scrollbar-thumb {
+    background-color: #AC1B2D;
+    border-radius: 10px;
+    border: 2px solid #222;
+}
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    background: #d42235;
+}
+.scrollbar-custom {
+    scrollbar-width: thin;
+    scrollbar-color: #AC1B2D #222;
+}
+
+/* Message Content Styling */
+.message-content {
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+
+/* Animations for loading indicators */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.animate-bounce {
+    animation: bounce 1s infinite;
+}
+
+.delay-0 {
+    animation-delay: 0ms;
+}
+
+.delay-150 {
+    animation-delay: 150ms;
+}
+
+.delay-300 {
+    animation-delay: 300ms;
+}
