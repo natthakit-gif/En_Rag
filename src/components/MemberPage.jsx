@@ -17,7 +17,7 @@ const MemberPage = ({ user }) => {
         studentId: "653040619-2",
         role: "",
         skills: [],
-        imgUrl: "./image/17nim.jpg"
+        imgUrl: "./image/earl.jpg"
         },
         {
         id: 3,
