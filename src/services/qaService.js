@@ -4,11 +4,11 @@ import { vectorStoreService } from './vectorStoreService';
 class QAService {
     constructor() {
         // ดึงค่า credentials จากตัวแปรสภาพแวดล้อม
-        // this.apiKey = process.env.REACT_APP_AZURE_API_KEY;
-        // this.endpoint = process.env.REACT_APP_AZURE_ENDPOINT;
-        // this.deploymentId = process.env.REACT_APP_AZURE_DEPLOYMENT_ID;
-        // this.apiVersion = process.env.REACT_APP_AZURE_API_VERSION;
-        this.openAi = process.env.OPENAI_API_KEY;
+        this.apiKey = process.env.REACT_APP_AZURE_API_KEY;
+        this.endpoint = process.env.REACT_APP_AZURE_ENDPOINT;
+        this.deploymentId = process.env.REACT_APP_AZURE_DEPLOYMENT_ID;
+        this.apiVersion = process.env.REACT_APP_AZURE_API_VERSION;
+        // this.openAi = process.env.OPENAI_API_KEY;
     }
 
     async generateAnswer(question, documents = []) {
