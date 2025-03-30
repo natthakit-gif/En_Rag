@@ -7,7 +7,7 @@ function SideBar({ user, activePage = "", children }) {
     const navItems = [
         { id: "home", label: "หน้าหลัก", path: "/welcome", icon: "🏠" },
         { id: "chat", label: "สนทนา", path: "/chat", icon: "💬" },
-        { id: "profile", label: "โปรไฟล์", path: "/profile", icon: "👤" },
+        { id: "member", label: "สมาชิก", path: "/member", icon: "👤" },
         { id: "settings", label: "ตั้งค่า", path: "/settings", icon: "⚙️" }
     ];
     
