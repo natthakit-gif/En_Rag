@@ -23,8 +23,8 @@ const MemberPage = ({ user }) => {
         id: 3,
         name: "นายณัฐกิตติ์ จิรเศรษฐานนท์",
         studentId: "653040620-7",
-        role: "Frontend Developer, UX/UI Design",
-        skills: ["Reactjs", "TailwindCSS"],
+        role: "",
+        skills: [],
         imgUrl: "./image/earth.jpg"
         },
         {
@@ -39,8 +39,8 @@ const MemberPage = ({ user }) => {
         id: 5,
         name: "นายกรภัทร์ สีดามาตร์",
         studentId: "653040699-7",
-        role: "Project Manager, Backend Developer",
-        skills: ["Golang", "Node.js", "Express", "Azure AI"],
+        role: "",
+        skills: [],
         imgUrl: "./image/guy.jpg"
         }
     ];
@@ -71,7 +71,7 @@ const MemberPage = ({ user }) => {
                 <h2 className="text-3xl font-bold text-[#043c74] mb-2">ทีมพัฒนา</h2>
                 <p className="text-gray-600 max-w-2xl mx-auto">
                 ทีมนักศึกษาภาควิชาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์ มหาวิทยาลัยขอนแก่น 
-                ผู้พัฒนาระบบ FAQ Chatbot สำหรับให้บริการข้อมูลการศึกษาแก่นักเรียนและนักศึกษา
+                ผู้พัฒนาระบบ RAG Chatbot สำหรับให้บริการข้อมูลการศึกษาแก่นักเรียนและนักศึกษา
                 </p>
             </div>
 
@@ -119,9 +119,9 @@ const MemberPage = ({ user }) => {
             <div className="mt-12 text-center bg-white rounded-lg p-6 shadow-md">
                 <h2 className="text-2xl font-bold text-[#043c74] mb-4">เกี่ยวกับโครงการ</h2>
                 <p className="text-gray-600 mb-4">
-                โครงการนี้เป็นส่วนหนึ่งของรายวิชา "การพัฒนาโปรแกรมประยุกต์สำหรับอุปกรณ์เคลื่อนที่" 
+                โครงการนี้เป็นส่วนหนึ่งของรายวิชา EN813002 : ทฤษฎีการคำนวณ 
                 ภาควิชาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์ มหาวิทยาลัยขอนแก่น 
-                ประจำปีการศึกษา 2568
+                ประจำปีการศึกษา 2567
                 </p>
                 <div className="border-t border-gray-200 pt-4 mt-4">
                 <p className="text-gray-500 text-sm">
