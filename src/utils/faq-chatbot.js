@@ -3,8 +3,12 @@ import QAService from '../services/qaService';
 
 export const handleUserMessage = async (message) => {
   try {
-    // Use the QAService to generate a response using Azure OpenAI
+    console.log("Processing user message:", message);
+    
+    // ใช้ QAService เพื่อสร้างคำตอบจาก Azure OpenAI
     const response = await QAService.generateAnswer(message);
+    console.log("Generated response:", response);
+    
     return response;
   } catch (error) {
     console.error("Error in handleUserMessage:", error);
